@@ -1,0 +1,19 @@
+.gradiente-vertical{
+    background-image: linear-gradient(to top, #11a911, #008000c1);
+}
+
+.gradiente-horizontal{
+    background-image: linear-gradient(to left, green, #306a30c1);
+}
+
+.gradiente-oblicua{
+    background-image: linear-gradient(45deg, green, #064006);
+}
+
+.gradiente-circular{
+    background-image: radial-gradient(circle, green, #033a03);
+}
+
+.gradiente-elipse{
+    background-image: radial-gradient(ellipse 200px 100px, green, #032b03);
+}

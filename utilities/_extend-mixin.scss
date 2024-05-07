@@ -1,0 +1,33 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin
+@mixin cajas ($color, $fuente){
+    background-color: $color;
+    border: 2px black solid;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-family: $fuente;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Keyframes
+@keyframes giro{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 

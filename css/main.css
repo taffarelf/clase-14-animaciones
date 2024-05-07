@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-column, .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes giro {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.gradiente-vertical, .main .caja-2 {
+  background-image: linear-gradient(to top, #11a911, rgba(0, 128, 0, 0.7568627451));
+}
+
+.gradiente-horizontal, .main .caja-1 {
+  background-image: linear-gradient(to left, green, rgba(48, 106, 48, 0.7568627451));
+}
+
+.gradiente-oblicua, .main .caja-3 {
+  background-image: linear-gradient(45deg, green, #064006);
+}
+
+.gradiente-circular, .main .caja-4 {
+  background-image: radial-gradient(circle, green, #033a03);
+}
+
+.gradiente-elipse, .main .caja-5 {
+  background-image: radial-gradient(ellipse 200px 100px, green, #032b03);
+}
+
+.main .caja-1 {
+  background-color: azure;
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(15deg) translate(70px, 10px);
+  transition: 2s;
+}
+.main .caja-2 {
+  background-color: #aec0c0;
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .caja-2:hover {
+  transform: scale(0.7);
+  transition: 0.3s ease-in-out;
+}
+.main .caja-3 {
+  background-color: azure;
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(5deg);
+}
+.main .caja-4 {
+  background-color: #aec0c0;
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.7);
+  animation-name: giro;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+.main .caja-5 {
+  background-color: azure;
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: serif;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-15deg) translate(70px);
+}/*# sourceMappingURL=main.css.map */

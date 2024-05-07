@@ -1,0 +1,37 @@
+.main{
+    @extend .flex-column;
+
+    .caja-1{
+        @include cajas (azure, serif);
+        @extend .gradiente-horizontal;
+        transform: rotate(15deg) translate(70px, 10px);
+        transition: 2s;
+    }
+    .caja-2{
+        @include cajas (#aec0c0, serif);
+        @extend .gradiente-vertical;
+        &:hover{
+            transform: scale(0.7);
+            transition: 0.3s ease-in-out;
+        }
+    }
+    .caja-3{
+        @include cajas (azure, serif);
+        @extend .gradiente-oblicua;
+        transform: skew(5deg);
+    }
+    .caja-4{
+        @include cajas (#aec0c0, serif);
+        @extend .gradiente-circular;
+        transform: scale(0.7);
+        animation-name: giro;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+    }
+    .caja-5{
+        @include cajas (azure, serif);
+        @extend .gradiente-elipse;
+        transform: rotate(-15deg) translate(70px);
+    }
+}
